@@ -1,3 +1,3 @@
-module.exports={
-    facilityCRUD : require("./facility/facility.crud.js")
-}
+module.exports = {
+  facilityCRUD: require("./facility/facility.crud.js"),
+};

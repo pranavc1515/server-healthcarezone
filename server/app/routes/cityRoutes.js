@@ -1,3 +1,3 @@
 module.exports = {
-    cityCRUD : require("./city/city.crud.js")
-}
+  cityCRUD: require("./city/city.crud.js"),
+};

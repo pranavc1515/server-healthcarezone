@@ -1,3 +1,3 @@
 module.exports = {
-    categoryCRUD : require("./category/category.crud.js")
-}
+  categoryCRUD: require("./category/category.crud.js"),
+};

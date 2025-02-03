@@ -74,6 +74,7 @@ async function login(userDetails) {
         { email: email_contact },
       ],
     });
+    console.log("user", registeredUser);
     if (!registeredUser) {
       throw "No user registered with given email or contact number please Sign-up first!";
     }

@@ -1,11 +1,13 @@
 const mongoose = require("mongoose");
 
 const categorySchema = new mongoose.Schema({
-  categoryName: { type: String, required: true },
-  shortDesc: { type: String, required: true },
-  cityRef: [{ type: mongoose.Schema.Types.ObjectId, default: [] }],
-  serviceRef: [{ type: mongoose.Schema.Types.ObjectId, default: [] }],
+  name: { type: String, required: true },
+  description: { type: String, required: true },
+  cityRef: [{ type: mongoose.Schema.Types.ObjectId, ref: "City", default: [] }], // Corrected ref to "City"
+  serviceRef: [
+    { type: mongoose.Schema.Types.ObjectId, ref: "Service", default: [] }, // Corrected ref to "Service"
+  ],
 });
 
-const category = mongoose.model("category", categorySchema);
-module.exports = category;
+const Category = mongoose.model("Category", categorySchema); // Capitalized model name
+module.exports = Category;

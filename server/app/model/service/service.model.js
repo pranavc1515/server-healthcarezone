@@ -2,8 +2,9 @@ const mongoose = require("mongoose");
 
 const serviceSchema = new mongoose.Schema({
   serviceName: { type: String, required: true },
-  shortDesc: { type: String, required: true },
+  description: { type: String, required: true },
+  serviceRef: { type: mongoose.Schema.Types.ObjectId, unique: true }, // Clarify purpose of this field
 });
 
-const service = new mongoose.model("service", serviceSchema);
-module.exports = service;
+const Service = mongoose.model("Service", serviceSchema); // Capitalized model name
+module.exports = Service;
