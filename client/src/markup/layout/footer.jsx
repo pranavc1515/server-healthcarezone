@@ -19,7 +19,10 @@ class aboutSection extends Component {
   render() {
     return (
       <>
-        <footer className="footer" style={{ backgroundImage: "url(" + footerBg + ")" }}>
+        <footer
+          className="footer"
+          style={{ backgroundImage: "url(" + footerBg + ")" }}
+        >
           <div className="footer-top">
             <div className="container">
               <div className="row">
@@ -32,7 +35,10 @@ class aboutSection extends Component {
                     </div>
                     <div className="ft-contact">
                       <h4>Our Vision</h4>
-                      <p>We strive to provide best quality and affordable health service to rural and urban people.</p>
+                      <p>
+                        We strive to provide best quality and affordable health
+                        service to rural and urban people.
+                      </p>
                       <div className="contact-bx">
                         <div className="icon">
                           <i className="fas fa-phone-alt"></i>
@@ -60,8 +66,8 @@ class aboutSection extends Component {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/booking">
-                          <span>Booking</span>
+                        <Link to="/book-consultant">
+                          <span>Book consultant</span>
                         </Link>
                       </li>
                       <li>
@@ -76,7 +82,7 @@ class aboutSection extends Component {
                       </li>
                       <li>
                         <Link to="/team">
-                          <span>Out Team</span>
+                          <span>Our Team</span>
                         </Link>
                       </li>
                     </ul>
@@ -120,31 +126,58 @@ class aboutSection extends Component {
                     <form className="subscribe-form subscription-form mb-30">
                       <div className="ajax-message"></div>
                       <div className="input-group">
-                        <input name="email" required="required" className="form-control" placeholder="Email Address" type="email" />
+                        <input
+                          name="email"
+                          required="required"
+                          className="form-control"
+                          placeholder="Email Address"
+                          type="email"
+                        />
                       </div>
-                      <button name="submit" value="Submit" type="submit" className="btn btn-secondary shadow w-100">
+                      <button
+                        name="submit"
+                        value="Submit"
+                        type="submit"
+                        className="btn btn-secondary shadow w-100"
+                      >
                         Subscribe Now
                       </button>
                     </form>
                     <div className="footer-social-link">
                       <ul>
                         <li>
-                          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/">
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.facebook.com/"
+                          >
                             <img src={facebook} alt="" />
                           </a>
                         </li>
                         <li>
-                          <a target="_blank" rel="noreferrer" href="https://twitter.com/">
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://twitter.com/"
+                          >
                             <img src={twitter} alt="" />
                           </a>
                         </li>
                         <li>
-                          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.instagram.com/"
+                          >
                             <img src={instagram} alt="" />
                           </a>
                         </li>
                         <li>
-                          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/">
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.linkedin.com/"
+                          >
                             <img src={linkedin} alt="" />
                           </a>
                         </li>
@@ -160,8 +193,13 @@ class aboutSection extends Component {
               <div className="row">
                 <div className="col-12 text-center">
                   <p className="copyright-text">
-                    Copyright © 2024 Design & Developed by
-                    <a href="https://themeforest.net/user/pranav" rel="noreferrer" target="_blank" className="text-secondary">
+                    Copyright © 2025 Design & Developed by
+                    <a
+                      href="https://themeforest.net/user/pranav"
+                      rel="noreferrer"
+                      target="_blank"
+                      className="text-secondary"
+                    >
                       {" "}
                       HEALTH CARE ZONE
                     </a>

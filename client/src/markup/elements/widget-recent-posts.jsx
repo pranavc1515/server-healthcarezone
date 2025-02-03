@@ -20,7 +20,7 @@ class WidgetRecentPosts extends Component{
 									<h6 className="post-title"><Link to="/blog-details">Precious Tips To Help You Get Better.</Link></h6>
 								</div>
 								<ul className="post-meta">
-									<li className="date"><i className="far fa-calendar-alt"></i> 21 July 2021</li>
+									<li className="date"><i className="far fa-calendar-alt"></i> 21 July 2025</li>
 								</ul>
 							</div>
 						</div>
@@ -31,7 +31,7 @@ class WidgetRecentPosts extends Component{
 									<h6 className="post-title"><Link to="/blog-details">Ten Doubts You Should Clarify About.</Link></h6>
 								</div>
 								<ul className="post-meta">
-									<li className="date"><i className="far fa-calendar-alt"></i> 20 July 2021</li>
+									<li className="date"><i className="far fa-calendar-alt"></i> 20 July 2025</li>
 								</ul>
 							</div>
 						</div>
@@ -42,7 +42,7 @@ class WidgetRecentPosts extends Component{
 									<h6 className="post-title"><Link to="/blog-details">The 10 Steps Needed For Putting.</Link></h6>
 								</div>
 								<ul className="post-meta">
-									<li className="date"><i className="far fa-calendar-alt"></i> 19 July 2021</li>
+									<li className="date"><i className="far fa-calendar-alt"></i> 19 July 2025</li>
 								</ul>
 							</div>
 						</div>

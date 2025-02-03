@@ -184,8 +184,8 @@ class Header extends Component {
                 <div className="secondary-menu">
                   <ul>
                     <li className="btn-area">
-                      <Link to="/contact-us" className="btn btn-primary shadow">
-                        CONTACT US{" "}
+                      <Link to="/book-appointment" className="btn btn-primary shadow">
+                        Book Appointment{" "}
                         <i className="btn-icon-bx fas fa-chevron-right"></i>
                       </Link>
                     </li>

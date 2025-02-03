@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 // Layout
@@ -18,29 +18,20 @@ import waveBlue from "../../images/shap/wave-blue.png";
 import circleDots from "../../images/shap/circle-dots.png";
 import plusBlue from "../../images/shap/plus-blue.png";
 
-class AboutUs extends Component {
-  render() {
-    return (
-      <>
-        <Header />
-
-        <div className="page-content bg-white">
-
-          <AboutSection />
-
-          <FeatureSection3 />
-
-          <TeamSection />
-
-          <TestimonialSection />
-
-          <LatestNewsSection />
-        </div>
-
-        <Footer />
-      </>
-    );
-  }
-}
+const AboutUs = () => {
+  return (
+    <>
+      <Header />
+      <div className="page-content bg-white">
+        <AboutSection />
+        <FeatureSection3 />
+        <TeamSection />
+        <TestimonialSection />
+        <LatestNewsSection />
+      </div>
+      <Footer />
+    </>
+  );
+};
 
 export default AboutUs;
