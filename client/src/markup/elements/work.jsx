@@ -26,7 +26,7 @@ class aboutSection extends Component{
 										<h5 className="title text-secondary mb-10">Make Appointmnet</h5>
 										<p>It is a long established fact that a reader will be distracted by the readable content of.</p>
 									</div>
-									<Link to="/booking" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
+									<Link to="/book-consultant" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 								</div>
 							</div>
 							<div className="col-lg-4 col-sm-6 mb-30">

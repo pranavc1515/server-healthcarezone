@@ -137,11 +137,13 @@ class Booking extends Component {
       <>
         <Header />
 
-        <Toast
-          variant={this.state.toastVariant}
-          showToast={this.state.showToast}
-          message={this.state.toastMessage}
-        />
+        <div className="Toast">
+          <Toast
+            variant={this.state.toastVariant}
+            showToast={this.state.showToast}
+            message={this.state.toastMessage}
+          />
+        </div>
 
         <div className="page-content bg-white">
           <div className="banner-wraper">

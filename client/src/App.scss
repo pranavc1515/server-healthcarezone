@@ -1,6 +1,6 @@
 @import "./scss/main";
 
-.App{
+.App {
   text-align: center;
 }
 .App-logo {
@@ -32,4 +32,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Toast {
+  position: fixed;
 }

@@ -52,11 +52,13 @@ const AddServices = () => {
   return (
     <>
       <Header />
-      <Toast
-        variant={toastVariant}
-        showToast={showToast}
-        message={toastMessage}
-      />
+      <div className="Toast">
+        <Toast
+          variant={toastVariant}
+          showToast={showToast}
+          message={toastMessage}
+        />
+      </div>
       <div className="page-content bg-white">
         <div className="banner-wraper">
           <div

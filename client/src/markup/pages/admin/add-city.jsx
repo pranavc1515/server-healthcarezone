@@ -28,7 +28,9 @@ const AddCities = () => {
     axios
       .post("/city/addCity", body)
       .then((res) => {
-        setToastMessage(`${res.data.name} has been added as new city in ${res.data.state} state`);
+        setToastMessage(
+          `${res.data.name} has been added as new city in ${res.data.state} state`
+        );
         setToastVariant("success");
         setShowToast(true);
         setTimeout(() => {
@@ -47,10 +49,19 @@ const AddCities = () => {
   return (
     <>
       <Header />
-      <Toast variant={toastVariant} showToast={showToast} message={toastMessage} />
+      <div className="Toast">
+        <Toast
+          variant={toastVariant}
+          showToast={showToast}
+          message={toastMessage}
+        />
+      </div>
       <div className="page-content bg-white">
         <div className="banner-wraper">
-          <div className="page-banner" style={{ backgroundImage: `url(${bnrImg1})` }}>
+          <div
+            className="page-banner"
+            style={{ backgroundImage: `url(${bnrImg1})` }}
+          >
             <section className="section-area section-sp2 appointment-wraper">
               <div className="container">
                 <div className="row justify-content-center">
@@ -59,12 +70,25 @@ const AddCities = () => {
                       <h3 className="title">Add new city</h3>
                       <form onSubmit={handleSubmit}>
                         <div className="form-group">
-                          <input type="text" className="form-control" placeholder="Enter city name" name="name" />
+                          <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Enter city name"
+                            name="name"
+                          />
                         </div>
                         <div className="form-group">
-                          <input type="text" className="form-control" placeholder="Enter the state name" name="state" />
+                          <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Enter the state name"
+                            name="state"
+                          />
                         </div>
-                        <button type="submit" className="btn btn-secondary btn-lg">
+                        <button
+                          type="submit"
+                          className="btn btn-secondary btn-lg"
+                        >
                           Submit
                         </button>
                       </form>

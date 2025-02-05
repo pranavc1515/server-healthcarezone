@@ -105,11 +105,13 @@ class Header extends Component {
   render() {
     return (
       <>
-        <Toast
-          variant={this.state.toastVariant}
-          showToast={this.state.showToast}
-          message={this.state.toastMessage}
-        />
+        <div className="Toast">
+          <Toast
+            variant={this.state.toastVariant}
+            showToast={this.state.showToast}
+            message={this.state.toastMessage}
+          />
+        </div>
         <Modal
           open={this.state.isModalOpen}
           onClose={this.handleModal}
@@ -184,7 +186,10 @@ class Header extends Component {
                 <div className="secondary-menu">
                   <ul>
                     <li className="btn-area">
-                      <Link to="/book-appointment" className="btn btn-primary shadow">
+                      <Link
+                        to="/book-appointment"
+                        className="btn btn-primary shadow"
+                      >
                         Book Appointment{" "}
                         <i className="btn-icon-bx fas fa-chevron-right"></i>
                       </Link>
@@ -229,7 +234,7 @@ class Header extends Component {
                               </Link>
                             </li>
                             <li>
-                              <Link to="/booking">
+                              <Link to="/book-consultant">
                                 <span>Booking</span>
                               </Link>
                             </li>

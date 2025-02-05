@@ -98,11 +98,13 @@ const BookAppointment = () => {
   return (
     <>
       <Header />
+      <div className="Toast">
       <Toast
         variant={toastVariant}
         showToast={showToast}
         message={toastMessage}
       />
+      </div>
 
       <div className="container">
         <div className="row align-items-center justify-content-center my-60">
@@ -206,7 +208,7 @@ const BookAppointment = () => {
                 </div>
 
                 <button type="submit" className="btn btn-secondary btn-lg">
-                  Appointment Now
+                  Book Now
                 </button>
               </form>
             </div>
